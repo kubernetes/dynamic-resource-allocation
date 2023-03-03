@@ -9,11 +9,11 @@ require (
 	github.com/google/go-cmp v0.5.9
 	github.com/stretchr/testify v1.8.1
 	google.golang.org/grpc v1.51.0
-	k8s.io/api v0.0.0-20230302011010-42a6c324deb9
-	k8s.io/apimachinery v0.0.0-20230302010315-590a2612ff27
-	k8s.io/client-go v0.0.0-20230302011831-91199a69ee5f
+	k8s.io/api v0.27.0-alpha.3
+	k8s.io/apimachinery v0.27.0-alpha.3
+	k8s.io/client-go v0.27.0-alpha.3
 	k8s.io/klog/v2 v2.90.1
-	k8s.io/kubelet v0.0.0-20230302023507-ab4b0dec5782
+	k8s.io/kubelet v0.27.0-alpha.3
 )
 
 require (
@@ -56,9 +56,9 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20230302011010-42a6c324deb9
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230302010315-590a2612ff27
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20230302011831-91199a69ee5f
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20230302013528-cdd3d3a94e73
-	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230302023507-ab4b0dec5782
+	k8s.io/api => k8s.io/api v0.27.0-alpha.3
+	k8s.io/apimachinery => k8s.io/apimachinery v0.27.0-alpha.3
+	k8s.io/client-go => k8s.io/client-go v0.27.0-alpha.3
+	k8s.io/component-base => k8s.io/component-base v0.27.0-alpha.3
+	k8s.io/kubelet => k8s.io/kubelet v0.27.0-alpha.3
 )
