@@ -9,11 +9,11 @@ require (
 	github.com/google/go-cmp v0.5.9
 	github.com/stretchr/testify v1.8.1
 	google.golang.org/grpc v1.51.0
-	k8s.io/api v0.0.0-20230315055827-772ba56cf9f1
-	k8s.io/apimachinery v0.0.0-20230314010357-128166500c57
-	k8s.io/client-go v0.0.0-20230315061823-48d97c09db8d
+	k8s.io/api v0.0.0-20230315055831-abe66f57fdb1
+	k8s.io/apimachinery v0.0.0-20230315054728-8d1258da8f38
+	k8s.io/client-go v0.0.0-20230315061845-84ae514115bd
 	k8s.io/klog/v2 v2.90.1
-	k8s.io/kubelet v0.0.0-20230315094028-bfc85f71f467
+	k8s.io/kubelet v0.0.0-20230315094032-507755b2b65c
 )
 
 require (
@@ -25,7 +25,7 @@ require (
 	github.com/go-openapi/swag v0.22.3 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
-	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/gnostic v0.5.7-v3refs // indirect
 	github.com/google/gofuzz v1.1.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
@@ -37,11 +37,11 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	golang.org/x/net v0.7.0 // indirect
+	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20220223155221-ee480838109b // indirect
-	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/term v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
+	golang.org/x/term v0.6.0 // indirect
+	golang.org/x/text v0.8.0 // indirect
 	golang.org/x/time v0.0.0-20220210224613-90d013bbcef8 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20220502173005-c8bf987b8c21 // indirect
@@ -57,9 +57,9 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20230315055827-772ba56cf9f1
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230314010357-128166500c57
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20230315061823-48d97c09db8d
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20230313212246-ce16dede9c0e
-	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230315094028-bfc85f71f467
+	k8s.io/api => k8s.io/api v0.0.0-20230315055831-abe66f57fdb1
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230315054728-8d1258da8f38
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20230315061845-84ae514115bd
+	k8s.io/component-base => k8s.io/component-base v0.0.0-20230315065615-6b9bb8ecc3d0
+	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230315094032-507755b2b65c
 )
