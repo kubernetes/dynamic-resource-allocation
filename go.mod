@@ -9,11 +9,11 @@ require (
 	github.com/google/go-cmp v0.5.9
 	github.com/stretchr/testify v1.8.2
 	google.golang.org/grpc v1.54.0
-	k8s.io/api v0.0.0-20230712211402-283b145385c0
-	k8s.io/apimachinery v0.0.0-20230712210707-c9b3b3a37189
-	k8s.io/client-go v0.0.0-20230711210844-560efb3b8995
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.100.1
-	k8s.io/kubelet v0.0.0-20230712230404-add84253c7b7
+	k8s.io/kubelet v0.0.0
 )
 
 require (
@@ -37,11 +37,11 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	golang.org/x/net v0.9.0 // indirect
+	golang.org/x/net v0.12.0 // indirect
 	golang.org/x/oauth2 v0.6.0 // indirect
-	golang.org/x/sys v0.8.0 // indirect
-	golang.org/x/term v0.7.0 // indirect
-	golang.org/x/text v0.9.0 // indirect
+	golang.org/x/sys v0.10.0 // indirect
+	golang.org/x/term v0.10.0 // indirect
+	golang.org/x/text v0.11.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230525234030-28d5490b6b19 // indirect
@@ -57,11 +57,12 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20230712211402-283b145385c0
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230712210707-c9b3b3a37189
-	k8s.io/apiserver => k8s.io/apiserver v0.0.0-20230713204150-36de07c4e7c3
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20230711210844-560efb3b8995
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20230713173548-ea35e2fd8622
-	k8s.io/cri-api => k8s.io/cri-api v0.0.0-20230706171503-4d83b9bd4e13
-	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230712230404-add84253c7b7
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/cri-api => ../cri-api
+	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
+	k8s.io/kubelet => ../kubelet
 )
