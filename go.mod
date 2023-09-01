@@ -9,17 +9,17 @@ require (
 	github.com/google/go-cmp v0.5.9
 	github.com/stretchr/testify v1.8.2
 	google.golang.org/grpc v1.54.0
-	k8s.io/api v0.0.0-20230829154641-e4c14aa9116e
-	k8s.io/apimachinery v0.0.0-20230829153926-1629459297c7
-	k8s.io/client-go v0.0.0-20230829155512-fb2e66896540
+	k8s.io/api v0.0.0-20230901043045-d68a18351c00
+	k8s.io/apimachinery v0.0.0-20230901041540-0d057e543013
+	k8s.io/client-go v0.0.0-20230901044724-5e5ba6b91d64
 	k8s.io/klog/v2 v2.100.1
-	k8s.io/kubelet v0.0.0-20230829164525-8cbf9cb8252e
+	k8s.io/kubelet v0.0.0-20230901074513-ee951ddf493a
 )
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.9.0 // indirect
-	github.com/evanphx/json-patch v5.6.0+incompatible // indirect
+	github.com/evanphx/json-patch v4.12.0+incompatible // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
 	github.com/go-openapi/jsonreference v0.20.2 // indirect
 	github.com/go-openapi/swag v0.22.3 // indirect
@@ -57,11 +57,11 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20230829154641-e4c14aa9116e
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230829153926-1629459297c7
-	k8s.io/apiserver => k8s.io/apiserver v0.0.0-20230829161328-f4c85a1be019
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20230829155512-fb2e66896540
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20230829160507-62d4fd038129
+	k8s.io/api => k8s.io/api v0.0.0-20230901043045-d68a18351c00
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230901041540-0d057e543013
+	k8s.io/apiserver => k8s.io/apiserver v0.0.0-20230901054518-e74fcfcb78ed
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20230901044724-5e5ba6b91d64
+	k8s.io/component-base => k8s.io/component-base v0.0.0-20230901051635-6a97c85314ee
 	k8s.io/cri-api => k8s.io/cri-api v0.0.0-20230829164104-604407e718bd
-	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230829164525-8cbf9cb8252e
+	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230901074513-ee951ddf493a
 )
