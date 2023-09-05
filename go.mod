@@ -10,10 +10,10 @@ require (
 	github.com/stretchr/testify v1.8.2
 	google.golang.org/grpc v1.54.0
 	k8s.io/api v0.0.0-20230901043046-faec07c7cc89
-	k8s.io/apimachinery v0.0.0-20230901041540-0d057e543013
-	k8s.io/client-go v0.0.0-20230903180004-4783d2835961
+	k8s.io/apimachinery v0.0.0-20230905232051-3514784dbf48
+	k8s.io/client-go v0.0.0-20230906022041-f5a7a42bbcf8
 	k8s.io/klog/v2 v2.100.1
-	k8s.io/kubelet v0.0.0-20230901074513-ee951ddf493a
+	k8s.io/kubelet v0.0.0-20230906025725-1eb2c77b6298
 )
 
 require (
@@ -58,10 +58,10 @@ require (
 
 replace (
 	k8s.io/api => k8s.io/api v0.0.0-20230901043046-faec07c7cc89
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230901041540-0d057e543013
-	k8s.io/apiserver => k8s.io/apiserver v0.0.0-20230901213511-21bbcb57c672
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20230903180004-4783d2835961
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20230901051635-6a97c85314ee
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230905232051-3514784dbf48
+	k8s.io/apiserver => k8s.io/apiserver v0.0.0-20230906023846-7b9705b874ea
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20230906022041-f5a7a42bbcf8
+	k8s.io/component-base => k8s.io/component-base v0.0.0-20230906023044-062e9fa3831d
 	k8s.io/cri-api => k8s.io/cri-api v0.0.0-20230829164104-604407e718bd
-	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230901074513-ee951ddf493a
+	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230906025725-1eb2c77b6298
 )
