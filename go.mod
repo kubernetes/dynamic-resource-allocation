@@ -9,11 +9,11 @@ require (
 	github.com/google/go-cmp v0.5.9
 	github.com/stretchr/testify v1.8.2
 	google.golang.org/grpc v1.54.0
-	k8s.io/api v0.0.0-20230909181734-5e9982075c8d
-	k8s.io/apimachinery v0.0.0-20230909181434-fd8daa85285e
-	k8s.io/client-go v0.0.0-20230909182134-a73949f10aab
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.100.1
-	k8s.io/kubelet v0.0.0-20230909190306-8b123bb91195
+	k8s.io/kubelet v0.0.0
 )
 
 require (
@@ -49,7 +49,7 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/kube-openapi v0.0.0-20230717233707-2695361300d9 // indirect
+	k8s.io/kube-openapi v0.0.0-20230905202853-d090da108d2f // indirect
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.3.0 // indirect
@@ -57,11 +57,12 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20230909181734-5e9982075c8d
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230909181434-fd8daa85285e
-	k8s.io/apiserver => k8s.io/apiserver v0.0.0-20230909184016-157f52a6147a
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20230909182134-a73949f10aab
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20230909183239-67a127246dfb
-	k8s.io/cri-api => k8s.io/cri-api v0.0.0-20230829164104-604407e718bd
-	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230909190306-8b123bb91195
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/cri-api => ../cri-api
+	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
+	k8s.io/kubelet => ../kubelet
 )
