@@ -9,11 +9,11 @@ require (
 	github.com/google/go-cmp v0.5.9
 	github.com/stretchr/testify v1.8.2
 	google.golang.org/grpc v1.54.0
-	k8s.io/api v0.0.0-20230904104028-546e4253e738
-	k8s.io/apimachinery v0.0.0-20230904102823-bc548d1d2406
-	k8s.io/client-go v0.0.0-20230904110526-29a840dbdf2a
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.100.1
-	k8s.io/kubelet v0.0.0-20230904124618-65cf3e334292
+	k8s.io/kubelet v0.0.0
 )
 
 require (
@@ -37,11 +37,11 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	golang.org/x/net v0.13.0 // indirect
+	golang.org/x/net v0.17.0 // indirect
 	golang.org/x/oauth2 v0.8.0 // indirect
-	golang.org/x/sys v0.10.0 // indirect
-	golang.org/x/term v0.10.0 // indirect
-	golang.org/x/text v0.11.0 // indirect
+	golang.org/x/sys v0.13.0 // indirect
+	golang.org/x/term v0.13.0 // indirect
+	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230525234030-28d5490b6b19 // indirect
@@ -57,11 +57,12 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20230904104028-546e4253e738
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230904102823-bc548d1d2406
-	k8s.io/apiserver => k8s.io/apiserver v0.0.0-20230904114607-bf038b7f385e
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20230904110526-29a840dbdf2a
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20230904111932-ef6aa9891ad3
-	k8s.io/cri-api => k8s.io/cri-api v0.0.0-20230830142048-885a47cd1218
-	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20230904124618-65cf3e334292
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/cri-api => ../cri-api
+	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
+	k8s.io/kubelet => ../kubelet
 )
