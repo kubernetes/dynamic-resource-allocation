@@ -63,14 +63,3 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
-
-replace (
-	k8s.io/api => k8s.io/api v0.0.0-20240308035331-170523fbf722
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20240307171817-d82afe1e363a
-	k8s.io/apiserver => k8s.io/apiserver v0.0.0-20240307053455-8763b7fa93af
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20240308040359-84dfaee610db
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20240306172020-b0a6e40497ae
-	k8s.io/cri-api => k8s.io/cri-api v0.0.0-20240306174858-30022f215cd7
-	k8s.io/kms => k8s.io/kms v0.0.0-20240306172340-03c9a46c21c7
-	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20240308050040-d555812529d5
-)
