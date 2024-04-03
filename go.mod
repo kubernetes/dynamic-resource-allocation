@@ -11,12 +11,12 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/stretchr/testify v1.8.4
 	google.golang.org/grpc v1.58.3
-	k8s.io/api v0.0.0-20240308035331-170523fbf722
-	k8s.io/apimachinery v0.0.0-20240307171817-d82afe1e363a
-	k8s.io/apiserver v0.0.0-20240307053455-8763b7fa93af
-	k8s.io/client-go v0.0.0-20240308040359-84dfaee610db
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/apiserver v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.120.1
-	k8s.io/kubelet v0.0.0-20240308050040-d555812529d5
+	k8s.io/kubelet v0.0.0
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b
 )
 
@@ -44,11 +44,11 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/stoewer/go-strcase v1.2.0 // indirect
 	golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e // indirect
-	golang.org/x/net v0.21.0 // indirect
+	golang.org/x/net v0.23.0 // indirect
 	golang.org/x/oauth2 v0.10.0 // indirect
 	golang.org/x/sync v0.6.0 // indirect
-	golang.org/x/sys v0.17.0 // indirect
-	golang.org/x/term v0.17.0 // indirect
+	golang.org/x/sys v0.18.0 // indirect
+	golang.org/x/term v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
@@ -65,7 +65,13 @@ require (
 )
 
 replace (
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20240307160843-0407311be590
-	k8s.io/cri-api => k8s.io/cri-api v0.0.0-20240327181501-1931560526bc
-	k8s.io/kms => k8s.io/kms v0.0.0-20240327165525-6bf80055228c
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/cri-api => ../cri-api
+	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
+	k8s.io/kms => ../kms
+	k8s.io/kubelet => ../kubelet
 )
