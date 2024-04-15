@@ -7,16 +7,16 @@ go 1.22.0
 require (
 	github.com/blang/semver/v4 v4.0.0
 	github.com/go-logr/logr v1.4.1
-	github.com/google/cel-go v0.17.8
+	github.com/google/cel-go v0.20.1
 	github.com/google/go-cmp v0.6.0
 	github.com/stretchr/testify v1.8.4
 	google.golang.org/grpc v1.58.3
-	k8s.io/api v0.0.0-20240418173402-5975d5e5bda6
-	k8s.io/apimachinery v0.0.0-20240418133208-0ee3e6150890
-	k8s.io/apiserver v0.0.0-20240422174816-1c1727b297a6
-	k8s.io/client-go v0.0.0-20240422173645-5b2b83af7254
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/apiserver v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.120.1
-	k8s.io/kubelet v0.0.0-20240422180328-160b46a7c2f2
+	k8s.io/kubelet v0.0.0
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b
 )
 
@@ -62,4 +62,16 @@ require (
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
+)
+
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/cri-api => ../cri-api
+	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
+	k8s.io/kms => ../kms
+	k8s.io/kubelet => ../kubelet
 )
