@@ -11,12 +11,12 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/stretchr/testify v1.8.4
 	google.golang.org/grpc v1.58.3
-	k8s.io/api v0.0.0-20240418173402-5975d5e5bda6
-	k8s.io/apimachinery v0.0.0-20240418133208-0ee3e6150890
-	k8s.io/apiserver v0.0.0-20240419094423-6333c07926a0
-	k8s.io/client-go v0.0.0-20240418173639-b1c1c0345d1d
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/apiserver v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.120.1
-	k8s.io/kubelet v0.0.0-20240419215721-2e910ed7015a
+	k8s.io/kubelet v0.0.0
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b
 )
 
@@ -45,7 +45,7 @@ require (
 	github.com/stoewer/go-strcase v1.2.0 // indirect
 	golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e // indirect
 	golang.org/x/net v0.23.0 // indirect
-	golang.org/x/oauth2 v0.10.0 // indirect
+	golang.org/x/oauth2 v0.18.0 // indirect
 	golang.org/x/sync v0.6.0 // indirect
 	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/term v0.18.0 // indirect
@@ -62,4 +62,16 @@ require (
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
+)
+
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/cri-api => ../cri-api
+	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
+	k8s.io/kms => ../kms
+	k8s.io/kubelet => ../kubelet
 )
