@@ -11,12 +11,12 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/stretchr/testify v1.8.4
 	google.golang.org/grpc v1.58.3
-	k8s.io/api v0.0.0
-	k8s.io/apimachinery v0.0.0
-	k8s.io/apiserver v0.0.0
-	k8s.io/client-go v0.0.0
+	k8s.io/api v0.0.0-20240423013409-039b247b85af
+	k8s.io/apimachinery v0.0.0-20240423013216-bb8822152cab
+	k8s.io/apiserver v0.0.0-20240423014832-359c50ed0b4d
+	k8s.io/client-go v0.0.0-20240423013650-47f558294cb9
 	k8s.io/klog/v2 v2.120.1
-	k8s.io/kubelet v0.0.0
+	k8s.io/kubelet v0.0.0-20240423020340-d4b714aa0b31
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b
 )
 
@@ -62,16 +62,4 @@ require (
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
-)
-
-replace (
-	k8s.io/api => ../api
-	k8s.io/apimachinery => ../apimachinery
-	k8s.io/apiserver => ../apiserver
-	k8s.io/client-go => ../client-go
-	k8s.io/component-base => ../component-base
-	k8s.io/cri-api => ../cri-api
-	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
-	k8s.io/kms => ../kms
-	k8s.io/kubelet => ../kubelet
 )
