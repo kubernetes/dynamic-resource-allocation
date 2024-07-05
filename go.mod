@@ -6,17 +6,17 @@ go 1.22.0
 
 require (
 	github.com/blang/semver/v4 v4.0.0
-	github.com/go-logr/logr v1.4.1
+	github.com/go-logr/logr v1.4.2
 	github.com/google/cel-go v0.20.1
 	github.com/google/go-cmp v0.6.0
 	github.com/stretchr/testify v1.9.0
-	google.golang.org/grpc v1.59.0
-	k8s.io/api v0.0.0-20240628222225-f41eb5f7ad05
-	k8s.io/apimachinery v0.0.0-20240628175805-ef4453d2613f
-	k8s.io/apiserver v0.0.0-20240628064310-5addfa30ff82
-	k8s.io/client-go v0.0.0-20240628222613-4dec662fe871
+	google.golang.org/grpc v1.65.0
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/apiserver v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20240628070452-e42a7b6c0667
+	k8s.io/kubelet v0.0.0
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b
 )
 
@@ -24,7 +24,7 @@ require (
 	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20190424111038-f61b66f89f4a // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/cespare/xxhash/v2 v2.2.0 // indirect
+	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/emicklei/go-restful/v3 v3.11.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
@@ -36,7 +36,7 @@ require (
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/gnostic-models v0.6.8 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
-	github.com/google/uuid v1.3.1 // indirect
+	github.com/google/uuid v1.6.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
@@ -62,16 +62,28 @@ require (
 	golang.org/x/term v0.21.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20230822172742-b8732ec3820d // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20230822172742-b8732ec3820d // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20240528184218-531527333157 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240701130421-f6361c86f094 // indirect
 	google.golang.org/protobuf v1.34.2 // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20240628063534-3b0f2cefb281 // indirect
+	k8s.io/component-base v0.0.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20240228011516-70dd3763d340 // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
+)
+
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/cri-api => ../cri-api
+	k8s.io/dynamic-resource-allocation => ../dynamic-resource-allocation
+	k8s.io/kms => ../kms
+	k8s.io/kubelet => ../kubelet
 )
