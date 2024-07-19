@@ -11,10 +11,10 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/stretchr/testify v1.9.0
 	google.golang.org/grpc v1.65.0
-	k8s.io/api v0.0.0-20240718182903-261e6aa4e645
-	k8s.io/apimachinery v0.0.0-20240715201109-ab0686929a37
-	k8s.io/apiserver v0.0.0-20240718224552-bf5c64d6124b
-	k8s.io/client-go v0.0.0-20240718183321-80707e5e449d
+	k8s.io/api v0.0.0-20240720022854-7d5e5eaf3aef
+	k8s.io/apimachinery v0.0.0-20240719223001-62791ecbc514
+	k8s.io/apiserver v0.0.0-20240720024610-bd463169afb8
+	k8s.io/client-go v0.0.0-20240719063343-5130bd9e7862
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/kubelet v0.0.0-20240719030713-136516c3b444
 	k8s.io/utils v0.0.0-20240711033017-18e509b52bc8
