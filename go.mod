@@ -14,8 +14,8 @@ require (
 	google.golang.org/grpc v1.65.0
 	k8s.io/api v0.0.0-20240904172100-421904605ee4
 	k8s.io/apimachinery v0.0.0-20240827232741-2465dc5239ab
-	k8s.io/apiserver v0.0.0-20240906194452-197cd431b187
-	k8s.io/client-go v0.0.0-20240905153435-51f5488cb945
+	k8s.io/apiserver v0.0.0-20240910234824-14b3ab9aa060
+	k8s.io/client-go v0.0.0-20240910233403-8d0bbdfdcc60
 	k8s.io/component-helpers v0.0.0-20240827234447-00efab46ba2b
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/kubelet v0.0.0-20240906200543-5bb9a750b0ea
@@ -77,3 +77,5 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
+
+replace k8s.io/kms => k8s.io/kms v0.0.0-20240911031427-5781cdc762b1
