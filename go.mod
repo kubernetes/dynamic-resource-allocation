@@ -16,11 +16,11 @@ require (
 	google.golang.org/grpc v1.65.0
 	k8s.io/api v0.0.0-20240912033524-9dc1a952bda9
 	k8s.io/apimachinery v0.0.0-20240913152823-0fc0110cc2ce
-	k8s.io/apiserver v0.0.0-20240913155000-ac5c364ababe
+	k8s.io/apiserver v0.0.0-20240916234411-b0e467577527
 	k8s.io/client-go v0.0.0-20240913153400-fb6ca040d7b7
 	k8s.io/component-helpers v0.0.0-20240912040858-ed3b8292baf4
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20240912052055-1205a09b69a3
+	k8s.io/kubelet v0.0.0-20240917000428-9a4aef8b603a
 	k8s.io/utils v0.0.0-20240711033017-18e509b52bc8
 )
 
