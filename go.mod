@@ -9,18 +9,18 @@ godebug default=go1.23
 require (
 	github.com/blang/semver/v4 v4.0.0
 	github.com/go-logr/logr v1.4.2
-	github.com/google/cel-go v0.20.1
+	github.com/google/cel-go v0.21.0
 	github.com/google/go-cmp v0.6.0
 	github.com/onsi/gomega v1.33.1
 	github.com/stretchr/testify v1.9.0
 	google.golang.org/grpc v1.65.0
 	k8s.io/api v0.0.0-20241001061456-5c8e0b961397
 	k8s.io/apimachinery v0.0.0-20240929035808-0db5dbf03048
-	k8s.io/apiserver v0.0.0-20241001221215-08c52b99b800
-	k8s.io/client-go v0.0.0-20241002020009-3ecd72cc0b06
+	k8s.io/apiserver v0.0.0-20241004022542-5bdd80ce6001
+	k8s.io/client-go v0.0.0-20241003203027-ca4a13f6dec7
 	k8s.io/component-helpers v0.0.0-20240928083404-d763e5df641d
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20240929045855-c1132a1c953f
+	k8s.io/kubelet v0.0.0-20241004024525-30cd2798a983
 	k8s.io/utils v0.0.0-20240711033017-18e509b52bc8
 )
 
