@@ -14,7 +14,7 @@ require (
 	github.com/onsi/gomega v1.33.1
 	github.com/stretchr/testify v1.9.0
 	google.golang.org/grpc v1.65.0
-	k8s.io/api v0.0.0-20241001061456-5c8e0b961397
+	k8s.io/api v0.0.0-20241007141734-f2b3dfac9f9a
 	k8s.io/apimachinery v0.0.0-20241004115029-c463db196543
 	k8s.io/apiserver v0.0.0-20241004022542-5bdd80ce6001
 	k8s.io/client-go v0.0.0-20241003203027-ca4a13f6dec7
