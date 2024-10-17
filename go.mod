@@ -8,16 +8,15 @@ godebug default=go1.23
 
 require (
 	github.com/blang/semver/v4 v4.0.0
-	github.com/go-logr/logr v1.4.2
 	github.com/google/cel-go v0.21.0
 	github.com/google/go-cmp v0.6.0
 	github.com/onsi/gomega v1.33.1
 	github.com/stretchr/testify v1.9.0
 	google.golang.org/grpc v1.65.0
-	k8s.io/api v0.0.0-20241017202521-8f5147e66c0b
+	k8s.io/api v0.0.0-20241018002458-8f28966dc046
 	k8s.io/apimachinery v0.0.0-20241016162213-51544a548467
-	k8s.io/apiserver v0.0.0-20241018004906-b907ccabbeb1
-	k8s.io/client-go v0.0.0-20241016060006-235936510e4e
+	k8s.io/apiserver v0.0.0-20241018004907-e784492b069c
+	k8s.io/client-go v0.0.0-20241018002900-6a276b2b9527
 	k8s.io/component-helpers v0.0.0-20241016061132-1148b937ba05
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/kubelet v0.0.0-20241018011238-e50747351ae4
@@ -32,6 +31,7 @@ require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/emicklei/go-restful/v3 v3.11.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
+	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-openapi/jsonpointer v0.21.0 // indirect
 	github.com/go-openapi/jsonreference v0.20.2 // indirect
 	github.com/go-openapi/swag v0.23.0 // indirect
