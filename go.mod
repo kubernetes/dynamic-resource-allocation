@@ -13,10 +13,10 @@ require (
 	github.com/onsi/gomega v1.33.1
 	github.com/stretchr/testify v1.9.0
 	google.golang.org/grpc v1.65.0
-	k8s.io/api v0.0.0-20241029173111-9e599fa63b14
+	k8s.io/api v0.0.0-20241030034125-271c79cac830
 	k8s.io/apimachinery v0.0.0-20241025000453-124c262107b0
-	k8s.io/apiserver v0.0.0-20241029184942-918f35033989
-	k8s.io/client-go v0.0.0-20241029174614-a887e579c095
+	k8s.io/apiserver v0.0.0-20241030030153-28f9eed68556
+	k8s.io/client-go v0.0.0-20241030065017-d7104c6737bc
 	k8s.io/component-helpers v0.0.0-20241029183032-f3d47aec4e3d
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/kubelet v0.0.0-20241029204808-d9fd70686281
