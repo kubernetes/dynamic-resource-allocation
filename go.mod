@@ -15,13 +15,13 @@ require (
 	github.com/onsi/gomega v1.35.1
 	github.com/stretchr/testify v1.9.0
 	google.golang.org/grpc v1.65.0
-	k8s.io/api v0.0.0
-	k8s.io/apimachinery v0.0.0
-	k8s.io/apiserver v0.0.0
-	k8s.io/client-go v0.0.0
-	k8s.io/component-helpers v0.0.0
+	k8s.io/api v0.0.0-20250124010721-4dccc5e86b95
+	k8s.io/apimachinery v0.0.0-20250130161731-a2cb7d3ca743
+	k8s.io/apiserver v0.0.0-20250204044831-2ce508cc4381
+	k8s.io/client-go v0.0.0-20250130002447-362c5e8de9fa
+	k8s.io/component-helpers v0.0.0-20250122205051-7e76b2dae270
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0
+	k8s.io/kubelet v0.0.0-20250204052724-ee29692d7798
 	k8s.io/utils v0.0.0-20241104100929-3ea5e8cea738
 )
 
@@ -74,21 +74,9 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0 // indirect
+	k8s.io/component-base v0.0.0-20250130203310-264c1fd30132 // indirect
 	k8s.io/kube-openapi v0.0.0-20241212222426-2c72e554b1e7 // indirect
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.2 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
-)
-
-replace (
-	k8s.io/api => ../api
-	k8s.io/apimachinery => ../apimachinery
-	k8s.io/apiserver => ../apiserver
-	k8s.io/client-go => ../client-go
-	k8s.io/component-base => ../component-base
-	k8s.io/component-helpers => ../component-helpers
-	k8s.io/cri-api => ../cri-api
-	k8s.io/kms => ../kms
-	k8s.io/kubelet => ../kubelet
 )
