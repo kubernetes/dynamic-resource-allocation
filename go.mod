@@ -9,17 +9,17 @@ godebug default=go1.24
 require (
 	github.com/blang/semver/v4 v4.0.0
 	github.com/google/cel-go v0.23.2
-	github.com/google/go-cmp v0.6.0
+	github.com/google/go-cmp v0.7.0
 	github.com/onsi/gomega v1.35.1
 	github.com/stretchr/testify v1.10.0
 	google.golang.org/grpc v1.68.1
-	k8s.io/api v0.0.0-20250307053018-84fcd81bee60
-	k8s.io/apimachinery v0.0.0-20250306085752-a3f7d4eded06
-	k8s.io/apiserver v0.0.0-20250306145345-7377dfa3e564
-	k8s.io/client-go v0.0.0-20250307053409-ca10b28dd3d9
-	k8s.io/component-helpers v0.0.0-20250302001813-57286731b04f
+	k8s.io/api v0.0.0-20250308012954-f5876dc39b09
+	k8s.io/apimachinery v0.0.0-20250308012722-ac04c7e41913
+	k8s.io/apiserver v0.0.0-20250308015206-c2e94ca50379
+	k8s.io/client-go v0.0.0-20250308013334-b3c87441408e
+	k8s.io/component-helpers v0.0.0-20250308014603-91d2e6f20597
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20250302004530-0ede3512604b
+	k8s.io/kubelet v0.0.0-20250308021628-7ae82ac4fd56
 	k8s.io/utils v0.0.0-20241104100929-3ea5e8cea738
 )
 
@@ -48,9 +48,9 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/prometheus/client_golang v1.19.1 // indirect
+	github.com/prometheus/client_golang v1.22.0-rc.0 // indirect
 	github.com/prometheus/client_model v0.6.1 // indirect
-	github.com/prometheus/common v0.55.0 // indirect
+	github.com/prometheus/common v0.62.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
 	github.com/spf13/cobra v1.8.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
@@ -65,18 +65,16 @@ require (
 	golang.org/x/sys v0.30.0 // indirect
 	golang.org/x/term v0.29.0 // indirect
 	golang.org/x/text v0.22.0 // indirect
-	golang.org/x/time v0.7.0 // indirect
+	golang.org/x/time v0.9.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20241209162323-e6fa225c2576 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20241209162323-e6fa225c2576 // indirect
-	google.golang.org/protobuf v1.35.2 // indirect
+	google.golang.org/protobuf v1.36.5 // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20250305013914-e05800f2e236 // indirect
+	k8s.io/component-base v0.0.0-20250308014439-30bb9670062a // indirect
 	k8s.io/kube-openapi v0.0.0-20241212222426-2c72e554b1e7 // indirect
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.2 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
-
-replace k8s.io/kms => k8s.io/kms v0.0.0-20250306213923-096f45a327d9
