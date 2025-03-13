@@ -12,14 +12,15 @@ require (
 	github.com/google/go-cmp v0.7.0
 	github.com/onsi/gomega v1.35.1
 	github.com/stretchr/testify v1.10.0
+	go.etcd.io/etcd/client/pkg/v3 v3.5.16
 	google.golang.org/grpc v1.68.1
-	k8s.io/api v0.0.0-20250314173034-c4f583a4a0c0
-	k8s.io/apimachinery v0.0.0-20250314052748-eaf4038701d0
-	k8s.io/apiserver v0.0.0-20250314175330-05ed2e066d6f
-	k8s.io/client-go v0.0.0-20250314173425-595b7ca245de
-	k8s.io/component-helpers v0.0.0-20250309134838-ce07ca451408
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/apiserver v0.0.0
+	k8s.io/client-go v0.0.0
+	k8s.io/component-helpers v0.0.0
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20250313140935-de5a54b8fc4a
+	k8s.io/kubelet v0.0.0
 	k8s.io/utils v0.0.0-20241104100929-3ea5e8cea738
 )
 
@@ -57,6 +58,8 @@ require (
 	github.com/x448/float16 v0.8.4 // indirect
 	go.opentelemetry.io/otel v1.33.0 // indirect
 	go.opentelemetry.io/otel/trace v1.33.0 // indirect
+	go.uber.org/multierr v1.11.0 // indirect
+	go.uber.org/zap v1.27.0 // indirect
 	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56 // indirect
 	golang.org/x/net v0.33.0 // indirect
 	golang.org/x/oauth2 v0.27.0 // indirect
@@ -71,7 +74,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20250314013811-792166919ea6 // indirect
+	k8s.io/component-base v0.0.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20250304201544-e5f78fe3ede9 // indirect
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
@@ -79,4 +82,14 @@ require (
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
 
-replace k8s.io/cri-api => k8s.io/cri-api v0.0.0-20250315060746-0df2b7e54ab6
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/component-helpers => ../component-helpers
+	k8s.io/cri-api => ../cri-api
+	k8s.io/kms => ../kms
+	k8s.io/kubelet => ../kubelet
+)
