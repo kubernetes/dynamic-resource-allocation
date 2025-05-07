@@ -15,12 +15,12 @@ require (
 	go.etcd.io/etcd/client/pkg/v3 v3.5.21
 	google.golang.org/grpc v1.68.1
 	k8s.io/api v0.0.0-20250503031400-f7e72be095ee
-	k8s.io/apimachinery v0.0.0-20250503031111-512f488de379
-	k8s.io/apiserver v0.0.0-20250503034220-eeced267adc0
-	k8s.io/client-go v0.0.0-20250503031754-7aa362d5dd59
+	k8s.io/apimachinery v0.0.0-20250506231203-2b45e0daa328
+	k8s.io/apiserver v0.0.0-20250506233917-007464aa0fdc
+	k8s.io/client-go v0.0.0-20250506232031-bf3d45b702d8
 	k8s.io/component-helpers v0.0.0-20250503032951-c20b14fc45f1
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20250503040728-4a6cccaf70ba
+	k8s.io/kubelet v0.0.0-20250505000252-8419bc34b916
 	k8s.io/utils v0.0.0-20250502105355-0f33e8f1c979
 )
 
@@ -74,7 +74,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20250503032835-394b28e84ba2 // indirect
+	k8s.io/component-base v0.0.0-20250506232724-41c27b0c0716 // indirect
 	k8s.io/kube-openapi v0.0.0-20250318190949-c8a335a9a2ff // indirect
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
