@@ -15,9 +15,9 @@ require (
 	go.etcd.io/etcd/client/pkg/v3 v3.6.1
 	google.golang.org/grpc v1.72.1
 	k8s.io/api v0.0.0-20250703010437-9ca4bf8538e0
-	k8s.io/apimachinery v0.0.0-20250703010150-b86b632271cf
-	k8s.io/apiserver v0.0.0-20250703013047-c93fe8d40fb5
-	k8s.io/client-go v0.0.0-20250703010829-2cfeed63b269
+	k8s.io/apimachinery v0.0.0-20250703090149-a9de165b70c8
+	k8s.io/apiserver v0.0.0-20250703092011-7364e005dcd9
+	k8s.io/client-go v0.0.0-20250703210831-7d9d3036fbc1
 	k8s.io/component-helpers v0.0.0-20250703012416-c067dbe98f12
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/kubelet v0.0.0-20250703015328-bbd1495a9a5e
@@ -76,7 +76,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20250703012258-22a26817cb48 // indirect
+	k8s.io/component-base v0.0.0-20250703091217-f2cc0ddd951c // indirect
 	k8s.io/kube-openapi v0.0.0-20250628140032-d90c4fd18f59 // indirect
 	sigs.k8s.io/json v0.0.0-20241014173422-cfa47c3a1cc8 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
