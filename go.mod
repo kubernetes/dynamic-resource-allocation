@@ -8,7 +8,7 @@ godebug default=go1.24
 
 require (
 	github.com/blang/semver/v4 v4.0.0
-	github.com/google/cel-go v0.25.0
+	github.com/google/cel-go v0.26.0
 	github.com/google/go-cmp v0.7.0
 	github.com/onsi/gomega v1.35.1
 	github.com/stretchr/testify v1.10.0
@@ -16,16 +16,16 @@ require (
 	google.golang.org/grpc v1.72.1
 	k8s.io/api v0.0.0-20250718010530-b3927ff69476
 	k8s.io/apimachinery v0.0.0-20250717210244-b92abb2d8139
-	k8s.io/apiserver v0.0.0-20250718012905-c0b5cc212d27
+	k8s.io/apiserver v0.0.0-20250718012906-8cb2ab9b0d2e
 	k8s.io/client-go v0.0.0-20250718010928-be36413bbca7
 	k8s.io/component-helpers v0.0.0-20250717172249-5095859f5100
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20250717175230-ac2b4c22fe21
+	k8s.io/kubelet v0.0.0-20250718015222-ca0bf778ee44
 	k8s.io/utils v0.0.0-20250604170112-4c0f3b243397
 )
 
 require (
-	cel.dev/expr v0.23.1 // indirect
+	cel.dev/expr v0.24.0 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
