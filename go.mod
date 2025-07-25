@@ -20,7 +20,7 @@ require (
 	k8s.io/client-go v0.0.0-20250725024918-f78361a6474d
 	k8s.io/component-helpers v0.0.0-20250725030049-f50e498bf4cb
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20250725032923-28e34b2552ff
+	k8s.io/kubelet v0.0.0-20250725071657-1e11384ce917
 	k8s.io/utils v0.0.0-20250604170112-4c0f3b243397
 )
 
@@ -83,3 +83,5 @@ require (
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.0 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
+
+replace k8s.io/api => k8s.io/api v0.0.0-20250725024535-9bc89ec036ec
