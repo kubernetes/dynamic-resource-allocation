@@ -14,13 +14,13 @@ require (
 	github.com/stretchr/testify v1.11.1
 	go.etcd.io/etcd/client/pkg/v3 v3.6.4
 	google.golang.org/grpc v1.72.2
-	k8s.io/api v0.0.0-20250930152327-c397f90a55bd
-	k8s.io/apimachinery v0.0.0-20251001143820-11e920b56ed2
-	k8s.io/apiserver v0.0.0-20250930193936-8de70157d17d
-	k8s.io/client-go v0.0.0-20251001032722-3c3a19fb562d
-	k8s.io/component-helpers v0.0.0-20250919034312-cc328a2915c4
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/apiserver v0.0.0
+	k8s.io/client-go v0.0.0
+	k8s.io/component-helpers v0.0.0
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20251001155838-6b2f450c4e03
+	k8s.io/kubelet v0.0.0
 	k8s.io/utils v0.0.0-20250604170112-4c0f3b243397
 )
 
@@ -36,7 +36,6 @@ require (
 	github.com/go-openapi/jsonpointer v0.21.0 // indirect
 	github.com/go-openapi/jsonreference v0.20.2 // indirect
 	github.com/go-openapi/swag v0.23.0 // indirect
-	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/google/gnostic-models v0.7.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
@@ -76,10 +75,22 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20250930153136-66f123b5ac6a // indirect
+	k8s.io/component-base v0.0.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20250910181357-589584f1c912 // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.0 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
+)
+
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/component-helpers => ../component-helpers
+	k8s.io/cri-api => ../cri-api
+	k8s.io/kms => ../kms
+	k8s.io/kubelet => ../kubelet
 )
