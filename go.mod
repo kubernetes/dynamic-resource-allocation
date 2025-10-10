@@ -14,10 +14,10 @@ require (
 	github.com/stretchr/testify v1.11.1
 	go.etcd.io/etcd/client/pkg/v3 v3.6.4
 	google.golang.org/grpc v1.72.2
-	k8s.io/api v0.0.0-20251008212439-8ac373c4a0f3
+	k8s.io/api v0.0.0-20251009052703-6cf0026d4343
 	k8s.io/apimachinery v0.0.0-20251008212151-ff7ddf5d4ebc
 	k8s.io/apiserver v0.0.0-20251008214905-c651ec0cf278
-	k8s.io/client-go v0.0.0-20251008212835-efcdcf78282a
+	k8s.io/client-go v0.0.0-20251009132834-8de342516c3d
 	k8s.io/component-helpers v0.0.0-20251008214234-85759c75589a
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/kubelet v0.0.0-20251008221018-55c171219fe0
@@ -82,3 +82,5 @@ require (
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.0 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
+
+replace k8s.io/cri-api => k8s.io/cri-api v0.0.0-20251009040900-02decfa5d342
