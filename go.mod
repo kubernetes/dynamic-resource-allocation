@@ -20,7 +20,7 @@ require (
 	k8s.io/client-go v0.0.0-20251106123256-0e6fc04326d2
 	k8s.io/component-helpers v0.0.0-20251106124553-0e2bf40485ce
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20251101161216-4bbdd72c09b8
+	k8s.io/kubelet v0.0.0-20251107011643-f09cb513b629
 	k8s.io/utils v0.0.0-20251002143259-bc988d571ff4
 )
 
