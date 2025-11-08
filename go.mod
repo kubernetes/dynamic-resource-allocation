@@ -15,10 +15,10 @@ require (
 	go.etcd.io/etcd/client/pkg/v3 v3.5.21
 	google.golang.org/grpc v1.68.1
 	k8s.io/api v0.0.0-20250411021314-16cedc7a66ae
-	k8s.io/apimachinery v0.0.0-20250411020758-955939ffb819
-	k8s.io/apiserver v0.0.0-20250418193540-1fb809d852f7
-	k8s.io/client-go v0.0.0-20250411022055-ecbbb0606499
-	k8s.io/component-helpers v0.0.0-20250411023846-d3fba0444e74
+	k8s.io/apimachinery v0.0.0-20250513120515-173776a0582d
+	k8s.io/apiserver v0.0.0-20250710053605-234ce9f2ae5d
+	k8s.io/client-go v0.0.0-20251014165038-a9e818b813cd
+	k8s.io/component-helpers v0.0.0-20250730120210-5bb2184ba8ba
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/kubelet v0.0.0-20250411035309-c6b3504b3800
 	k8s.io/utils v0.0.0-20241104100929-3ea5e8cea738
