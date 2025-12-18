@@ -12,15 +12,15 @@ require (
 	github.com/google/go-cmp v0.7.0
 	github.com/onsi/gomega v1.38.2
 	github.com/stretchr/testify v1.11.1
-	go.etcd.io/etcd/client/pkg/v3 v3.6.5
+	go.etcd.io/etcd/client/pkg/v3 v3.6.6
 	google.golang.org/grpc v1.72.2
-	k8s.io/api v0.0.0-20251218022515-cc3b8d55eb43
-	k8s.io/apimachinery v0.0.0-20251218022201-cec5dd05301e
-	k8s.io/apiserver v0.0.0-20251218024918-ebef3486a40c
-	k8s.io/client-go v0.0.0-20251218022938-0d964cc38634
+	k8s.io/api v0.0.0-20251218062647-56ee7b10ed3f
+	k8s.io/apimachinery v0.0.0-20251218062152-a9de6f8b12f4
+	k8s.io/apiserver v0.0.0-20251218065946-045a035da69b
+	k8s.io/client-go v0.0.0-20251218063304-ca2dee6d058e
 	k8s.io/component-helpers v0.0.0-20251204230024-d853346140cf
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20251204235747-94647dfa1ca5
+	k8s.io/kubelet v0.0.0-20251218073957-8750fd679e3a
 	k8s.io/utils v0.0.0-20251002143259-bc988d571ff4
 )
 
@@ -82,5 +82,3 @@ require (
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.0 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
-
-replace k8s.io/cri-api => k8s.io/cri-api v0.0.0-20251218030843-66fd5952ee0b
