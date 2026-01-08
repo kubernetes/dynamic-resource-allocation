@@ -11,17 +11,17 @@ require (
 	github.com/go-logr/logr v1.4.3
 	github.com/google/cel-go v0.26.0
 	github.com/google/go-cmp v0.7.0
-	github.com/onsi/gomega v1.38.3
+	github.com/onsi/gomega v1.39.0
 	github.com/stretchr/testify v1.11.1
 	go.etcd.io/etcd/client/pkg/v3 v3.6.6
 	google.golang.org/grpc v1.75.0
-	k8s.io/api v0.0.0-20260108223420-b85c96296f2f
-	k8s.io/apimachinery v0.0.0-20260107193351-2936fea9b085
-	k8s.io/apiserver v0.0.0-20260107185318-a60c92c1b688
-	k8s.io/client-go v0.0.0-20260107183400-52d9854c37fe
-	k8s.io/component-helpers v0.0.0-20251223144302-5042f4d06524
+	k8s.io/api v0.0.0-20260108223421-5c36d525c6b0
+	k8s.io/apimachinery v0.0.0-20260108222734-dd7de37ecc3e
+	k8s.io/apiserver v0.0.0-20260108231830-f9d348d4f996
+	k8s.io/client-go v0.0.0-20260108224317-811a272277cc
+	k8s.io/component-helpers v0.0.0-20260108230717-dc2d65e0f436
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kubelet v0.0.0-20260107231634-4b4233d72b8a
+	k8s.io/kubelet v0.0.0-20260109001107-ee63a4b3edf8
 	k8s.io/utils v0.0.0-20251219084037-98d557b7f1e7
 )
 
@@ -75,7 +75,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20251226184832-b8fb4e3d1155 // indirect
+	k8s.io/component-base v0.0.0-20260108230339-a0076176f3e4 // indirect
 	k8s.io/kube-openapi v0.0.0-20250910181357-589584f1c912 // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
