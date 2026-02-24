@@ -78,7 +78,7 @@ func resolvePCIeRoot(pciBusID string) (string, error) {
 
 	// If the target is a relative path, we need to resolve it relative to the symlink's directory.
 	if !filepath.IsAbs(target) {
-		target = filepath.Join(filepath.Dir(sysBusPath), target)
+		target = filepath.Clean(filepath.Join(filepath.Dir(sysBusPath), target))
 	}
 
 	// targetAbs must be /sys/devices/pci0000:00/...<intermediate PCI devices>.../0000:04:1f.0
