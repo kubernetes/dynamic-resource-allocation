@@ -91,9 +91,9 @@ func resolvePCIeRoot(pciBusID string) (string, error) {
 	}
 
 	// We need to extract the PCIe Root part, which is the first part of the path after /sys/devices/.
-	pcieRootPart := strings.Split(strings.TrimPrefix(target, sysfs.devices("")+"/"), "/")[0]
-
-	return pcieRootPart, nil
+	target = strings.TrimPrefix(target, sysfs.devices("")+string(filepath.Separator))
+	pcieRootParts := strings.Split(target, string(filepath.Separator))
+	return pcieRootParts[0], nil
 }
 
 // GetPCIBusIDAttribute returns a DeviceAttribute with the PCI Bus Address("<domain>:<bus>:<device>.<function>")
