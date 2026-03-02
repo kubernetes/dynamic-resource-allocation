@@ -16,25 +16,15 @@ limitations under the License.
 
 package deviceattribute
 
-import "path/filepath"
+import (
+	"io/fs"
+	"os"
+)
 
 const (
-	sysfsRoot = "/sys"
+	SysfsRoot = "/sys"
 )
 
-var (
-	sysfs sysfsPath = sysfsPath(sysfsRoot)
-)
-
-// sysfsPath provides methods to construct sysfs paths for various subsystems.
-// It is used to abstract the sysfs path construction
-// and can be replaced with a mock in tests.
-type sysfsPath string
-
-func (s sysfsPath) devices(path string) string {
-	return filepath.Join(string(s), "devices", path)
-}
-
-func (s sysfsPath) bus(path string) string {
-	return filepath.Join(string(s), "bus", path)
+func initDefaultMachine(mc *machine) {
+	mc.sysfs = os.DirFS(SysfsRoot).(fs.ReadLinkFS)
 }
