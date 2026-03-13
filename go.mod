@@ -15,13 +15,13 @@ require (
 	github.com/stretchr/testify v1.11.1
 	go.etcd.io/etcd/client/pkg/v3 v3.6.8
 	google.golang.org/grpc v1.78.0
-	k8s.io/api v0.0.0-20260312204559-404992a372c9
-	k8s.io/apimachinery v0.0.0-20260312005947-65082b639303
-	k8s.io/apiserver v0.0.0-20260312211654-52628939cae4
-	k8s.io/client-go v0.0.0-20260312205103-c07c271a94ae
-	k8s.io/component-helpers v0.0.0-20260312012834-0f06e3ce722f
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/apiserver v0.0.0-20260317093807-b91cf16c1319
+	k8s.io/client-go v0.0.0
+	k8s.io/component-helpers v0.0.0-20260313115336-7bbdfdab85fe
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260312214227-5d1fd9fdd376
+	k8s.io/kubelet v0.0.0-20260317125557-f2ecaaea406b
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
 	sigs.k8s.io/randfill v1.0.0
 )
@@ -56,7 +56,6 @@ require (
 	github.com/stoewer/go-strcase v1.3.0 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	go.opentelemetry.io/otel v1.40.0 // indirect
-	go.opentelemetry.io/otel/sdk/metric v1.40.0 // indirect
 	go.opentelemetry.io/otel/trace v1.40.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.1 // indirect
@@ -76,9 +75,18 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20260311132547-3d250a3e11dc // indirect
+	k8s.io/component-base v0.0.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20260304202019-5b3e3fdb0acf // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.2 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
+)
+
+replace (
+	k8s.io/api => k8s.io/api v0.0.0-20260317073624-369111fb8de0
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20260317071512-f00b254e34da
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20260317075959-9dc763689d1a
+	k8s.io/component-base => k8s.io/component-base v0.0.0-20260313115336-089d54029606
+	k8s.io/kms => k8s.io/kms v0.0.0-20260306083908-2d26e8225029
+	k8s.io/streaming => k8s.io/streaming v0.0.0-20260317070603-951b6bf67777
 )
