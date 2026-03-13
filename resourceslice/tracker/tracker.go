@@ -31,7 +31,7 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/util/sets"
 	resourceinformers "k8s.io/client-go/informers/resource/v1"
-	resourcealphainformers "k8s.io/client-go/informers/resource/v1alpha3"
+	resourcebetainformers "k8s.io/client-go/informers/resource/v1beta2"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/kubernetes/scheme"
 	v1core "k8s.io/client-go/kubernetes/typed/core/v1"
@@ -119,7 +119,7 @@ type Options struct {
 	EnableConsumableCapacity bool
 
 	SliceInformer resourceinformers.ResourceSliceInformer
-	TaintInformer resourcealphainformers.DeviceTaintRuleInformer
+	TaintInformer resourcebetainformers.DeviceTaintRuleInformer
 	ClassInformer resourceinformers.DeviceClassInformer
 
 	// KubeClient is used to generate Events when CEL expressions
