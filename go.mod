@@ -17,11 +17,11 @@ require (
 	google.golang.org/grpc v1.78.0
 	k8s.io/api v0.0.0
 	k8s.io/apimachinery v0.0.0
-	k8s.io/apiserver v0.0.0-20260317093807-b91cf16c1319
-	k8s.io/client-go v0.0.0
-	k8s.io/component-helpers v0.0.0-20260313115336-7bbdfdab85fe
+	k8s.io/apiserver v0.0.0-20260317093832-149741089943
+	k8s.io/client-go v0.0.0-20260317080009-39f55294aa5b
+	k8s.io/component-helpers v0.0.0-20260317090818-58c8ea9b1070
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260317125557-f2ecaaea406b
+	k8s.io/kubelet v0.0.0-20260317125604-0ac2cd6dd280
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
 	sigs.k8s.io/randfill v1.0.0
 )
@@ -75,7 +75,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0 // indirect
+	k8s.io/component-base v0.0.0-20260317085346-690fd4f8073c // indirect
 	k8s.io/kube-openapi v0.0.0-20260304202019-5b3e3fdb0acf // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.2 // indirect
@@ -83,10 +83,6 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20260317073624-369111fb8de0
+	k8s.io/api => k8s.io/api v0.0.0-20260317073629-4524ff41f527
 	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20260317071512-f00b254e34da
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20260317075959-9dc763689d1a
-	k8s.io/component-base => k8s.io/component-base v0.0.0-20260313115336-089d54029606
-	k8s.io/kms => k8s.io/kms v0.0.0-20260306083908-2d26e8225029
-	k8s.io/streaming => k8s.io/streaming v0.0.0-20260317070603-951b6bf67777
 )
