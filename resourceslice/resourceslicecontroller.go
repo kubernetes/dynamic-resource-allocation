@@ -147,9 +147,12 @@ type DriverResources struct {
 // Pool is the collection of devices belonging to the same pool.
 type Pool struct {
 	// NodeSelector may be different for each pool. Must not get set together
-	// with Resources.NodeName. If nil and Resources.NodeName is not set,
-	// then devices are available on all nodes.
+	// with Resources.NodeName, Slices.PerDeviceNodeSelection or AllNodes.
 	NodeSelector *v1.NodeSelector
+
+	// AllNodes may be different for each pool. Must not get set together
+	// with Resources.NodeName, Slices.PerDeviceNodeSelection or NodeSelector.
+	AllNodes bool
 
 	// Generation can be left at zero. It gets bumped up automatically
 	// by the controller.
@@ -766,7 +769,6 @@ func (c *Controller) syncPool(ctx context.Context, poolName string) error {
 		Generation:         generation, // May get updated later.
 		ResourceSliceCount: int64(resourceSliceCount),
 	}
-	desiredAllNodes := pool.NodeSelector == nil && nodeName == ""
 
 	// Now for each desired slice, figure out which of them are changed.
 	changedDesiredSlices := sets.New[int]()
@@ -775,7 +777,7 @@ func (c *Controller) syncPool(ctx context.Context, poolName string) error {
 		// entries are the same.
 		if !apiequality.Semantic.DeepEqual(&currentSlice.Spec.Pool, &desiredPool) ||
 			!apiequality.Semantic.DeepEqual(currentSlice.Spec.NodeSelector, pool.NodeSelector) ||
-			ptr.Deref(currentSlice.Spec.AllNodes, false) != desiredAllNodes ||
+			ptr.Deref(currentSlice.Spec.AllNodes, false) != pool.AllNodes ||
 			!DevicesDeepEqual(currentSlice.Spec.Devices, pool.Slices[i].Devices) ||
 			!apiequality.Semantic.DeepEqual(currentSlice.Spec.SharedCounters, pool.Slices[i].SharedCounters) ||
 			!apiequality.Semantic.DeepEqual(currentSlice.Spec.PerDeviceNodeSelection, pool.Slices[i].PerDeviceNodeSelection) {
@@ -825,7 +827,7 @@ func (c *Controller) syncPool(ctx context.Context, poolName string) error {
 		//
 		// When adding new fields here, then also extend sliceStored.
 		slice.Spec.NodeSelector = pool.NodeSelector
-		slice.Spec.AllNodes = refIfNotZero(desiredAllNodes)
+		slice.Spec.AllNodes = refIfNotZero(pool.AllNodes)
 		slice.Spec.SharedCounters = pool.Slices[i].SharedCounters
 		slice.Spec.PerDeviceNodeSelection = pool.Slices[i].PerDeviceNodeSelection
 		// Preserve TimeAdded from existing device, if there is a matching device and taint.
@@ -877,7 +879,7 @@ func (c *Controller) syncPool(ctx context.Context, poolName string) error {
 				Pool:                   desiredPool,
 				NodeName:               refIfNotZero(nodeName),
 				NodeSelector:           pool.NodeSelector,
-				AllNodes:               refIfNotZero(desiredAllNodes),
+				AllNodes:               refIfNotZero(pool.AllNodes),
 				Devices:                pool.Slices[i].Devices,
 				SharedCounters:         pool.Slices[i].SharedCounters,
 				PerDeviceNodeSelection: pool.Slices[i].PerDeviceNodeSelection,
