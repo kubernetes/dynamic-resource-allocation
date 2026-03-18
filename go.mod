@@ -17,11 +17,11 @@ require (
 	google.golang.org/grpc v1.78.0
 	k8s.io/api v0.0.0
 	k8s.io/apimachinery v0.0.0
-	k8s.io/apiserver v0.0.0-20260318043452-5bf8c1c85bb0
-	k8s.io/client-go v0.0.0-20260318040424-bb93391625eb
+	k8s.io/apiserver v0.0.0-20260318163640-128a0e33b694
+	k8s.io/client-go v0.0.0-20260318160710-6c2138477663
 	k8s.io/component-helpers v0.0.0-20260317090818-58c8ea9b1070
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260318011204-83e2c40b17c4
+	k8s.io/kubelet v0.0.0-20260318171500-04c3a323a895
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
 	sigs.k8s.io/randfill v1.0.0
 )
@@ -51,7 +51,7 @@ require (
 	github.com/prometheus/client_model v0.6.2 // indirect
 	github.com/prometheus/common v0.67.5 // indirect
 	github.com/prometheus/procfs v0.19.2 // indirect
-	github.com/spf13/cobra v1.10.0 // indirect
+	github.com/spf13/cobra v1.10.2 // indirect
 	github.com/spf13/pflag v1.0.9 // indirect
 	github.com/stoewer/go-strcase v1.3.0 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
@@ -75,7 +75,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20260317085346-690fd4f8073c // indirect
+	k8s.io/component-base v0.0.0-20260318162252-8a878838d00d // indirect
 	k8s.io/kube-openapi v0.0.0-20260304202019-5b3e3fdb0acf // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.2 // indirect
@@ -83,6 +83,6 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20260318053538-629d7f3ac8bd
+	k8s.io/api => k8s.io/api v0.0.0-20260318160010-913796feea53
 	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20260317234939-27f467019a4e
 )
