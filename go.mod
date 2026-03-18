@@ -15,13 +15,13 @@ require (
 	github.com/stretchr/testify v1.11.1
 	go.etcd.io/etcd/client/pkg/v3 v3.6.8
 	google.golang.org/grpc v1.78.0
-	k8s.io/api v0.0.0
-	k8s.io/apimachinery v0.0.0
-	k8s.io/apiserver v0.0.0-20260318163640-128a0e33b694
-	k8s.io/client-go v0.0.0-20260318160710-6c2138477663
-	k8s.io/component-helpers v0.0.0-20260317090818-58c8ea9b1070
+	k8s.io/api v0.0.0-20260318195839-1ee4dbfb376b
+	k8s.io/apimachinery v0.0.0-20260318195418-729062d58854
+	k8s.io/apiserver v0.0.0-20260318203813-c2576b4b6b22
+	k8s.io/client-go v0.0.0-20260318200515-2fb6b9cac00d
+	k8s.io/component-helpers v0.0.0-20260318202424-23026853402f
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260318171500-04c3a323a895
+	k8s.io/kubelet v0.0.0-20260318211643-f2337ed965a2
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
 	sigs.k8s.io/randfill v1.0.0
 )
@@ -46,6 +46,7 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
+	github.com/onsi/ginkgo/v2 v2.28.1 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/prometheus/client_golang v1.23.2 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
@@ -75,14 +76,9 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/component-base v0.0.0-20260318162252-8a878838d00d // indirect
-	k8s.io/kube-openapi v0.0.0-20260304202019-5b3e3fdb0acf // indirect
+	k8s.io/component-base v0.0.0-20260318202210-7dbe9af30685 // indirect
+	k8s.io/kube-openapi v0.0.0-20260317180543-43fb72c5454a // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.2 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
-)
-
-replace (
-	k8s.io/api => k8s.io/api v0.0.0-20260318195837-e827bebcff01
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20260317234939-27f467019a4e
 )
