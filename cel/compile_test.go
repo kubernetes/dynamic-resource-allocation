@@ -160,6 +160,33 @@ var testcases = map[string]struct {
 		expectMatch: true,
 		expectCost:  5,
 	},
+	"macro-exists-on-int": {
+		enableListTypeAttributes: new(true),
+		envType:                  ptr.To(environment.NewExpressions),
+		expression:               `device.attributes["dra.example.com"].name.exists(x, x > 0)`,
+		attributes:               map[resourceapi.QualifiedName]resourceapi.DeviceAttribute{"name": {IntValue: new(int64(1))}},
+		driver:                   "dra.example.com",
+		expectMatchError:         "got 'types.Int', expected iterable type",
+		expectCost:               5 + ((3 + 3) * maxElementsListTypeEnabled /* (cost(loopCondition=="not_strictly_false(!accu)") + cost(loopStep=="accu && (x > 0)")) * maxElementsListTypeEnabled */),
+	},
+	"macro-exists-on-bool": {
+		enableListTypeAttributes: new(true),
+		envType:                  ptr.To(environment.NewExpressions),
+		expression:               `device.attributes["dra.example.com"].name.exists(x, x == true)`,
+		attributes:               map[resourceapi.QualifiedName]resourceapi.DeviceAttribute{"name": {BoolValue: new(true)}},
+		driver:                   "dra.example.com",
+		expectMatchError:         "got 'types.Bool', expected iterable type",
+		expectCost:               5 + ((3 + 3) * maxElementsListTypeEnabled /* (cost(loopCondition=="not_strictly_false(!accu)") + cost(loopStep=="accu && (x > 0)")) * maxElementsListTypeEnabled */),
+	},
+	"macro-exists-on-string": {
+		enableListTypeAttributes: new(true),
+		envType:                  ptr.To(environment.NewExpressions),
+		expression:               `device.attributes["dra.example.com"].name.exists(x, x == "fish")`,
+		attributes:               map[resourceapi.QualifiedName]resourceapi.DeviceAttribute{"name": {StringValue: new("fish")}},
+		driver:                   "dra.example.com",
+		expectMatchError:         "got 'types.String', expected iterable type",
+		expectCost:               5 + ((3 + 3) * maxElementsListTypeEnabled /* (cost(loopCondition=="not_strictly_false(!accu)") + cost(loopStep=="accu && (x > 0)")) * maxElementsListTypeEnabled */),
+	},
 	"attribute-access-causes-match-error": {
 		enableListTypeAttributes: new(false),
 		expression:               `device.attributes["dra.example.com"].names`,
@@ -415,6 +442,21 @@ var testcases = map[string]struct {
 		expectMatch: false,
 		expectCost:  4 + 48, /* cost of "includes" is max list length */
 	},
+	"in-operator-on-list": {
+		// This case is for documenting purpose to present the difference of call cost estimation
+		// between "in" operator and "includes" function.
+		// The cost estimation of "includes" is based on resourceapi.ResourceSliceMaxAttributeValuesPerDevice
+		// because it's designed for checking whether a value is included in an device attribute list.
+		// Instead, the cost estimation of "in" operator is based on maxElementsListTypeEnabled
+		// (MaxElements in AttributeType(cel.DeclType)) as this operator is CEL standard one.
+		enableListTypeAttributes: new(true),
+		envType:                  ptr.To(environment.NewExpressions),
+		expression:               `1 in device.attributes["dra.example.com"].names`,
+		attributes:               map[resourceapi.QualifiedName]resourceapi.DeviceAttribute{"names": {IntValues: []int64{1, 2, 3}}},
+		driver:                   "dra.example.com",
+		expectMatch:              true,
+		expectCost:               4 + 64, /* cost of "in" is maxElementsListTypeEnabled*/
+	},
 	"version": {
 		expression:  `device.attributes["dra.example.com"].name.isGreaterThan(semver("0.0.1"))`,
 		attributes:  map[resourceapi.QualifiedName]resourceapi.DeviceAttribute{"name": {VersionValue: ptr.To("1.0.0")}},
@@ -429,6 +471,15 @@ var testcases = map[string]struct {
 		driver:      "dra.example.com",
 		expectMatch: true,
 		expectCost:  7,
+	},
+	"macro-exists-on-version": {
+		enableListTypeAttributes: new(true),
+		envType:                  ptr.To(environment.NewExpressions),
+		expression:               `device.attributes["dra.example.com"].name.exists(x, x.isGreaterThan(semver("0.0.1")))`,
+		attributes:               map[resourceapi.QualifiedName]resourceapi.DeviceAttribute{"name": {VersionValue: new("1.0.0")}},
+		driver:                   "dra.example.com",
+		expectMatchError:         "got 'cel.Semver', expected iterable type",
+		expectCost:               5 + ((3 + 4) * maxElementsListTypeEnabled /* (cost(loopCondition=="not_strictly_false(!accu)") + cost(loopStep=="accu && (x.isGreaterThan(semver("0.0.1"))")) * maxElementsListTypeEnabled */),
 	},
 	"quantity": {
 		expression:  `device.capacity["dra.example.com"].name.isGreaterThan(quantity("1Ki"))`,
