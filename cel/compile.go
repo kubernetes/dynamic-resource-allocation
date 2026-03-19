@@ -454,16 +454,19 @@ func newCompiler(features Features) *compiler {
 // which checks whether the target includes the argument.
 // It supports both singular values and lists.
 //
-// WARNING: When the target is a list, this function only checks the first
-// resourceapi.ResourceAttributeMaxValueLength values. This limit prevents the
-// function's execution cost from becoming unbounded.
+// WARNING: includes is not applicable to lists longer than
+// resourceapi.ResourceSliceMaxAttributeValuesPerDevice. A runtime error gets
+// returned in that case to prevent unbounded execution cost.
 // The target is expected to be a scalar or list attribute, but users can
 // technically call "includes" on any value.
 func includesFunc(target, arg ref.Val) ref.Val {
 	if list, ok := target.(traits.Lister); ok {
 		i := 0
 		it := list.Iterator()
-		for it.HasNext() == types.True && i < resourceapi.ResourceSliceMaxAttributeValuesPerDevice {
+		for it.HasNext() == types.True {
+			if i >= resourceapi.ResourceSliceMaxAttributeValuesPerDevice {
+				return types.NewErr("'includes' function cannot be applied to lists longer than %d values", resourceapi.ResourceSliceMaxAttributeValuesPerDevice)
+			}
 			item := it.Next()
 			if item.Equal(arg) == types.True {
 				return types.True

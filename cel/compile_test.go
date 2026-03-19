@@ -427,7 +427,7 @@ var testcases = map[string]struct {
 		expectMatch: false,
 		expectCost:  4 + 48, /* cost of "includes" is max list length */
 	},
-	"includes-function-on-very-long-list-negative": {
+	"includes-function-on-very-long-list-runtime-error": {
 		enableListTypeAttributes: new(true),
 		envType:                  ptr.To(environment.NewExpressions),
 		expression:               fmt.Sprintf(`device.attributes["dra.example.com"].name.includes("value-%d")`, resourceapi.ResourceSliceMaxAttributeValuesPerDevice+1),
@@ -438,9 +438,9 @@ var testcases = map[string]struct {
 			}
 			return values
 		}()}},
-		driver:      "dra.example.com",
-		expectMatch: false,
-		expectCost:  4 + 48, /* cost of "includes" is max list length */
+		driver:           "dra.example.com",
+		expectMatchError: fmt.Sprintf("'includes' function cannot be applied to lists longer than %d values", resourceapi.ResourceSliceMaxAttributeValuesPerDevice),
+		expectCost:       4 + 48, /* cost of "includes" is max list length */
 	},
 	"in-operator-on-list": {
 		// This case is for documenting purpose to present the difference of call cost estimation
