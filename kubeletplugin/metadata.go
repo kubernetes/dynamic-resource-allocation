@@ -101,7 +101,7 @@ const (
 	// DefaultCDIDir is the default directory for CDI spec files.
 	DefaultCDIDir = "/var/run/cdi"
 
-	cdiVersionStr     = "0.3.0"
+	cdiVersionStr     = "0.5.0"
 	metadataFilePerms = os.FileMode(0644)
 	metadataDirPerms  = os.FileMode(0755)
 )
