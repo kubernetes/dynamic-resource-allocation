@@ -9,16 +9,16 @@ godebug default=go1.26
 require (
 	github.com/blang/semver/v4 v4.0.0
 	github.com/go-logr/logr v1.4.3
-	github.com/google/cel-go v0.26.0
+	github.com/google/cel-go v0.27.0
 	github.com/google/go-cmp v0.7.0
 	github.com/onsi/gomega v1.39.1
 	github.com/stretchr/testify v1.11.1
 	go.etcd.io/etcd/client/pkg/v3 v3.6.8
 	google.golang.org/grpc v1.79.3
 	k8s.io/api v0.0.0-20260423021924-2dd166de3fa1
-	k8s.io/apimachinery v0.0.0-20260423015058-7bcff479a293
-	k8s.io/apiserver v0.0.0-20260423024545-26f03da71c49
-	k8s.io/client-go v0.0.0-20260423022421-9dcacd934a99
+	k8s.io/apimachinery v0.0.0-20260423021553-a31c3dcb1f8b
+	k8s.io/apiserver v0.0.0-20260423194610-e51f1ed16c82
+	k8s.io/client-go v0.0.0-20260423102623-3273f3d7b7fd
 	k8s.io/component-helpers v0.0.0-20260414161221-0a0fc66e1d14
 	k8s.io/klog/v2 v2.140.0
 	k8s.io/kubelet v0.0.0-20260414194243-6e4e99a3c652
@@ -28,7 +28,7 @@ require (
 
 require (
 	cel.dev/expr v0.25.1 // indirect
-	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
+	github.com/antlr4-go/antlr/v4 v4.13.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
@@ -54,7 +54,6 @@ require (
 	github.com/prometheus/procfs v0.19.2 // indirect
 	github.com/spf13/cobra v1.10.2 // indirect
 	github.com/spf13/pflag v1.0.9 // indirect
-	github.com/stoewer/go-strcase v1.3.0 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	go.opentelemetry.io/otel v1.41.0 // indirect
 	go.opentelemetry.io/otel/trace v1.41.0 // indirect
