@@ -11,14 +11,14 @@ require (
 	github.com/go-logr/logr v1.4.3
 	github.com/google/cel-go v0.27.0
 	github.com/google/go-cmp v0.7.0
-	github.com/onsi/gomega v1.39.1
+	github.com/onsi/gomega v1.40.0
 	github.com/stretchr/testify v1.11.1
 	go.etcd.io/etcd/client/pkg/v3 v3.6.11
 	google.golang.org/grpc v1.81.0
-	k8s.io/api v0.0.0-20260506204515-74f8152a4388
+	k8s.io/api v0.0.0-20260508012116-d7538f889a3e
 	k8s.io/apimachinery v0.0.0-20260506204125-679298e8cb0f
-	k8s.io/apiserver v0.0.0-20260506211241-4aa69dc1d36e
-	k8s.io/client-go v0.0.0-20260506205028-24705f39ff1a
+	k8s.io/apiserver v0.0.0-20260508010509-3263bb76a83a
+	k8s.io/client-go v0.0.0-20260507205023-0582d760ecc1
 	k8s.io/component-helpers v0.0.0-20260506210426-85ee2c4ec30d
 	k8s.io/klog/v2 v2.140.0
 	k8s.io/kubelet v0.0.0-20260506214240-295f7f8e5e61
@@ -55,7 +55,6 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/onsi/ginkgo/v2 v2.28.1 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/prometheus/client_golang v1.23.2 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
