@@ -15,14 +15,14 @@ require (
 	github.com/stretchr/testify v1.11.1
 	go.etcd.io/etcd/client/pkg/v3 v3.7.0-rc.0
 	google.golang.org/grpc v1.81.1
-	k8s.io/api v0.0.0
-	k8s.io/apimachinery v0.0.0
-	k8s.io/apiserver v0.0.0
-	k8s.io/client-go v0.0.0
-	k8s.io/component-base v0.0.0
-	k8s.io/component-helpers v0.0.0
+	k8s.io/api v0.0.0-20260527210648-a675ef64dc8c
+	k8s.io/apimachinery v0.0.0-20260528165152-23de3b4e1a5d
+	k8s.io/apiserver v0.0.0-20260602115353-0cb107f24fe2
+	k8s.io/client-go v0.0.0-20260528210130-5d252d37f730
+	k8s.io/component-base v0.0.0-20260530010758-d7e6e618d967
+	k8s.io/component-helpers v0.0.0-20260523140705-697527ad461d
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0
+	k8s.io/kubelet v0.0.0-20260530015332-826fb07e0ed9
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
 	sigs.k8s.io/randfill v1.0.0
 )
@@ -88,16 +88,4 @@ require (
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.4.0 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
-)
-
-replace (
-	k8s.io/api => ../api
-	k8s.io/apimachinery => ../apimachinery
-	k8s.io/apiserver => ../apiserver
-	k8s.io/client-go => ../client-go
-	k8s.io/component-base => ../component-base
-	k8s.io/component-helpers => ../component-helpers
-	k8s.io/kms => ../kms
-	k8s.io/kubelet => ../kubelet
-	k8s.io/streaming => ../streaming
 )
