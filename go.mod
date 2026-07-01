@@ -16,13 +16,13 @@ require (
 	go.etcd.io/etcd/client/pkg/v3 v3.7.0-rc.0
 	google.golang.org/grpc v1.81.1
 	k8s.io/api v0.0.0-20260701084926-e425034170ac
-	k8s.io/apimachinery v0.0.0-20260701082954-b16db0ad9a39
-	k8s.io/apiserver v0.0.0-20260701104328-f65e2e143acb
-	k8s.io/client-go v0.0.0-20260701091141-36c74390179a
+	k8s.io/apimachinery v0.0.0-20260701165018-c428e39362be
+	k8s.io/apiserver v0.0.0-20260701173708-c9f9cf747e61
+	k8s.io/client-go v0.0.0-20260701170242-0f26f3dd91bb
 	k8s.io/component-base v0.0.0-20260626175201-04d6ee2658ec
 	k8s.io/component-helpers v0.0.0-20260701101538-42914c38c15b
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260626183808-a13503c6b002
+	k8s.io/kubelet v0.0.0-20260701182214-15823638cba0
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/randfill v1.0.0
 )
@@ -89,5 +89,3 @@ require (
 	sigs.k8s.io/structured-merge-diff/v6 v6.4.0 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
-
-replace k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20260630233209-f0c6bf7ce960
