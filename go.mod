@@ -17,12 +17,12 @@ require (
 	google.golang.org/grpc v1.81.1
 	k8s.io/api v0.0.0-20260709100004-a0e64618a579
 	k8s.io/apimachinery v0.0.0-20260708230628-806395eee25d
-	k8s.io/apiserver v0.0.0-20260709103651-df19a0041915
-	k8s.io/client-go v0.0.0-20260708220807-22afa080ccda
-	k8s.io/component-base v0.0.0-20260708022243-9dc6cf0c75fe
-	k8s.io/component-helpers v0.0.0-20260708022554-af578fb8e56b
+	k8s.io/apiserver v0.0.0-20260709103653-8d7e4af9b9d3
+	k8s.io/client-go v0.0.0-20260709100650-93099c504278
+	k8s.io/component-base v0.0.0-20260709102311-c3a72c34d529
+	k8s.io/component-helpers v0.0.0-20260709102545-15984fe10b71
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260708031610-e7e86f7958ef
+	k8s.io/kubelet v0.0.0-20260709111737-8a4b233323bf
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/randfill v1.0.0
 )
@@ -74,7 +74,7 @@ require (
 	golang.org/x/net v0.55.1-0.20260602153038-42abb857022c // indirect
 	golang.org/x/oauth2 v0.36.0 // indirect
 	golang.org/x/sync v0.20.0 // indirect
-	golang.org/x/sys v0.45.0 // indirect
+	golang.org/x/sys v0.46.0 // indirect
 	golang.org/x/term v0.43.0 // indirect
 	golang.org/x/text v0.37.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
