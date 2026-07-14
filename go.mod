@@ -16,8 +16,8 @@ require (
 	go.etcd.io/etcd/client/pkg/v3 v3.7.0
 	google.golang.org/grpc v1.81.1
 	k8s.io/api v0.0.0-20260710100122-271ac82bb297
-	k8s.io/apimachinery v0.0.0-20260710095601-0838f1f442d5
-	k8s.io/apiserver v0.0.0-20260713183350-379815fabfdd
+	k8s.io/apimachinery v0.0.0-20260714080237-16d43734bc5c
+	k8s.io/apiserver v0.0.0-20260714103054-46b0b020837f
 	k8s.io/client-go v0.0.0-20260711020846-2bdf2d3bf8a9
 	k8s.io/component-base v0.0.0-20260710102828-e911414da118
 	k8s.io/component-helpers v0.0.0-20260710103118-d43ece45aeab
