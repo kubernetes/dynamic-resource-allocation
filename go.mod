@@ -15,14 +15,14 @@ require (
 	github.com/stretchr/testify v1.11.1
 	go.etcd.io/etcd/client/pkg/v3 v3.7.0
 	google.golang.org/grpc v1.82.1
-	k8s.io/api v0.0.0-20260722172337-7243a8b3524c
-	k8s.io/apimachinery v0.0.0-20260722150601-97b2132e8707
-	k8s.io/apiserver v0.0.0-20260722134716-8c6ff7dcfffc
-	k8s.io/client-go v0.0.0-20260722172917-237d528e53f2
+	k8s.io/api v0.0.0-20260723055923-55a343154574
+	k8s.io/apimachinery v0.0.0-20260723012037-cb0680df9e7c
+	k8s.io/apiserver v0.0.0-20260723024402-b60513a9a31f
+	k8s.io/client-go v0.0.0-20260723060509-b2c672be6d69
 	k8s.io/component-base v0.0.0-20260721193929-349fbe06359c
-	k8s.io/component-helpers v0.0.0-20260721194310-5cdfe33a25a7
+	k8s.io/component-helpers v0.0.0-20260723062052-3dbfa534dfef
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260722182347-1773f7ff0b79
+	k8s.io/kubelet v0.0.0-20260723065935-63b3249724f7
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/randfill v1.0.0
 	tags.cncf.io/container-device-interface/specs-go v1.1.0
@@ -91,5 +91,3 @@ require (
 	sigs.k8s.io/structured-merge-diff/v6 v6.4.2 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
-
-replace k8s.io/kms => k8s.io/kms v0.0.0-20260722174728-7dc88c042aa2
