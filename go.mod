@@ -13,13 +13,13 @@ require (
 	github.com/google/go-cmp v0.7.0
 	github.com/onsi/gomega v1.40.0
 	github.com/stretchr/testify v1.12.1
-	go.etcd.io/etcd/client/pkg/v3 v3.7.0
+	go.etcd.io/etcd/client/pkg/v3 v3.7.1
 	google.golang.org/grpc v1.82.1
 	k8s.io/api v0.0.0-20260829005437-99eb51d61cdd
 	k8s.io/apimachinery v0.0.0-20260830211405-7dc327f6cd52
-	k8s.io/apiserver v0.0.0-20260831181503-96eae41cdc22
+	k8s.io/apiserver v0.0.0-20260901181558-948b07c3844f
 	k8s.io/client-go v0.0.0-20260829005942-d4060b1a90a3
-	k8s.io/component-base v0.0.0-20260829011232-e442c4088bc3
+	k8s.io/component-base v0.0.0-20260831220340-1336601c6776
 	k8s.io/component-helpers v0.0.0-20260829011432-c72de78839ae
 	k8s.io/klog/v2 v2.140.0
 	k8s.io/kubelet v0.0.0-20260829015506-e3e2e84e7e57
