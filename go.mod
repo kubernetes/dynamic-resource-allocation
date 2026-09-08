@@ -15,14 +15,14 @@ require (
 	github.com/stretchr/testify v1.12.1
 	go.etcd.io/etcd/client/pkg/v3 v3.7.1
 	google.golang.org/grpc v1.82.1
-	k8s.io/api v0.0.0-20260904215302-696b79c644cf
-	k8s.io/apimachinery v0.0.0-20260904214832-b16c9f2303a7
-	k8s.io/apiserver v0.0.0-20260904222653-ca98fc133511
-	k8s.io/client-go v0.0.0-20260904215909-498754e35f3c
-	k8s.io/component-base v0.0.0-20260904221422-f6eb7bda313f
-	k8s.io/component-helpers v0.0.0-20260904221643-4f85b9e09f8b
+	k8s.io/api v0.0.0-20260908175325-6db3353067ed
+	k8s.io/apimachinery v0.0.0-20260908174850-5e9368769673
+	k8s.io/apiserver v0.0.0-20260908182644-40760e5a5033
+	k8s.io/client-go v0.0.0-20260908175932-bd33a045e7a2
+	k8s.io/component-base v0.0.0-20260908181428-c71246228989
+	k8s.io/component-helpers v0.0.0-20260908181640-5c2337903aa0
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260904230626-3e70798dd099
+	k8s.io/kubelet v0.0.0-20260908190641-5daec70b0348
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/randfill v1.0.0
 	tags.cncf.io/container-device-interface/specs-go v1.1.0
@@ -69,13 +69,13 @@ require (
 	go.yaml.in/yaml/v2 v2.4.4 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
 	golang.org/x/exp v0.0.0-20260410095643-746e56fc9e2f // indirect
-	golang.org/x/mod v0.37.0 // indirect
+	golang.org/x/mod v0.38.0 // indirect
 	golang.org/x/net v0.57.0 // indirect
 	golang.org/x/oauth2 v0.36.0 // indirect
 	golang.org/x/sync v0.22.0 // indirect
 	golang.org/x/sys v0.47.0 // indirect
 	golang.org/x/term v0.45.0 // indirect
-	golang.org/x/text v0.40.0 // indirect
+	golang.org/x/text v0.41.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260526163538-3dc84a4a5aaa // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260526163538-3dc84a4a5aaa // indirect
