@@ -14,15 +14,15 @@ require (
 	github.com/onsi/gomega v1.40.0
 	github.com/stretchr/testify v1.12.1
 	go.etcd.io/etcd/client/pkg/v3 v3.7.1
-	google.golang.org/grpc v1.82.1
-	k8s.io/api v0.0.0-20260910074134-ba65e05bfb3c
-	k8s.io/apimachinery v0.0.0-20260910012034-a34869e33a20
-	k8s.io/apiserver v0.0.0-20260910171832-408c1bb00b1b
-	k8s.io/client-go v0.0.0-20260909155859-e00b95407b94
-	k8s.io/component-base v0.0.0-20260908221437-960dbf2ec1f4
+	google.golang.org/grpc v1.82.2
+	k8s.io/api v0.0.0-20260910221315-1dc86240dd84
+	k8s.io/apimachinery v0.0.0-20260910220915-6c11c83c4505
+	k8s.io/apiserver v0.0.0-20260911143439-9f066755a6a6
+	k8s.io/client-go v0.0.0-20260910221834-f02d4420aca6
+	k8s.io/component-base v0.0.0-20260911142345-c58055e8ea54
 	k8s.io/component-helpers v0.0.0-20260909235451-037166a3854b
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260908230715-801ff02216ea
+	k8s.io/kubelet v0.0.0-20260911150729-4427ac790632
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/randfill v1.0.0
 	tags.cncf.io/container-device-interface/specs-go v1.1.0
