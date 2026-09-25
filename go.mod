@@ -15,14 +15,14 @@ require (
 	github.com/stretchr/testify v1.12.1
 	go.etcd.io/etcd/client/pkg/v3 v3.7.1
 	google.golang.org/grpc v1.82.2
-	k8s.io/api v0.0.0-20260925175811-97b4aac46fbf
-	k8s.io/apimachinery v0.0.0-20260925175343-be1093d69c39
-	k8s.io/apiserver v0.0.0-20260925183219-524306ef2170
-	k8s.io/client-go v0.0.0-20260925180432-0b3e140561dc
-	k8s.io/component-base v0.0.0-20260925181949-33d458fff1ed
-	k8s.io/component-helpers v0.0.0-20260925182215-24eaa305d155
+	k8s.io/api v0.0.0-20260925175813-1ae1ab50d0cd
+	k8s.io/apimachinery v0.0.0-20260925175345-fdc546200a6d
+	k8s.io/apiserver v0.0.0-20260925183224-d365d26d0f4d
+	k8s.io/client-go v0.0.0-20260925180436-4849f5561335
+	k8s.io/component-base v0.0.0-20260925181953-c3f88dae1f3b
+	k8s.io/component-helpers v0.0.0-20260925182217-66b885f15e1f
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/kubelet v0.0.0-20260925191059-c75b1be261fb
+	k8s.io/kubelet v0.0.0-20260925191101-f3ef587be6bc
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/randfill v1.0.0
 	tags.cncf.io/container-device-interface/specs-go v1.1.0
@@ -35,7 +35,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/emicklei/go-restful/v3 v3.13.0 // indirect
-	github.com/fxamacker/cbor/v2 v2.9.1 // indirect
+	github.com/fxamacker/cbor/v2 v2.9.4 // indirect
 	github.com/go-openapi/jsonpointer v1.0.0 // indirect
 	github.com/go-openapi/jsonreference v1.0.0 // indirect
 	github.com/go-openapi/swag v0.27.1 // indirect
