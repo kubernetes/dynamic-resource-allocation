@@ -16,8 +16,8 @@ require (
 	go.etcd.io/etcd/client/pkg/v3 v3.7.2
 	google.golang.org/grpc v1.84.0
 	k8s.io/api v0.0.0-20261014062226-4da9bd412d97
-	k8s.io/apimachinery v0.0.0-20261014061809-27000ee24e0f
-	k8s.io/apiserver v0.0.0-20261014065523-05d4eab0f3ef
+	k8s.io/apimachinery v0.0.0-20261014181830-cd96a5bc34ad
+	k8s.io/apiserver v0.0.0-20261014184833-56d8d4ab5a7e
 	k8s.io/client-go v0.0.0-20261014062828-a84f1cff5430
 	k8s.io/component-base v0.0.0-20261014064326-eb2e9d857afe
 	k8s.io/component-helpers v0.0.0-20261014064534-e0a714b31fcd
@@ -77,3 +77,5 @@ require (
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.0 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
+
+replace k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20261014181830-9236ccf23048
