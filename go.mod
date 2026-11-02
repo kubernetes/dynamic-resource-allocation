@@ -7,7 +7,7 @@ go 1.27.0
 godebug default=go1.27
 
 require (
-	cel.dev/cel-go v0.33.1
+	cel.dev/cel-go v0.33.2
 	github.com/blang/semver/v4 v4.0.0
 	github.com/go-logr/logr v1.4.4
 	github.com/google/go-cmp v0.7.0
@@ -15,15 +15,15 @@ require (
 	github.com/stretchr/testify v1.12.1
 	go.etcd.io/etcd/client/pkg/v3 v3.7.3
 	google.golang.org/grpc v1.85.0
-	k8s.io/api v0.0.0-20261102164818-232f8158c4af
-	k8s.io/apimachinery v0.0.0-20261102164403-9b85b23ad678
-	k8s.io/apiserver v0.0.0-20261102171906-b8356c39e723
-	k8s.io/client-go v0.0.0-20261102165358-264b41154a0d
-	k8s.io/component-base v0.0.0-20261102170743-0dbefe7fa314
-	k8s.io/component-helpers v0.0.0-20261102170948-371ec840b3af
+	k8s.io/api v0.0.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/apiserver v0.0.0
+	k8s.io/client-go v0.0.0
+	k8s.io/component-base v0.0.0
+	k8s.io/component-helpers v0.0.0
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/ktesting v0.0.0-20261102163952-bc538521d450
-	k8s.io/kubelet v0.0.0-20261102175501-36b4fb467381
+	k8s.io/ktesting v0.0.0
+	k8s.io/kubelet v0.0.0
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/randfill v1.0.0
 	tags.cncf.io/container-device-interface/specs-go v1.1.1
@@ -77,4 +77,17 @@ require (
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.1 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
+)
+
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/apiserver => ../apiserver
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
+	k8s.io/component-helpers => ../component-helpers
+	k8s.io/kms => ../kms
+	k8s.io/ktesting => ../ktesting
+	k8s.io/kubelet => ../kubelet
+	k8s.io/streaming => ../streaming
 )
