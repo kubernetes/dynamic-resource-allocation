@@ -17,13 +17,13 @@ require (
 	google.golang.org/grpc v1.85.0
 	k8s.io/api v0.0.0-20261103004912-473839cffaa3
 	k8s.io/apimachinery v0.0.0-20261102164403-9b85b23ad678
-	k8s.io/apiserver v0.0.0-20261103131215-0f639234bb8a
+	k8s.io/apiserver v0.0.0-20261103212501-f76dd1572e3f
 	k8s.io/client-go v0.0.0-20261103005455-2f8d58824f79
-	k8s.io/component-base v0.0.0-20261102170743-0dbefe7fa314
+	k8s.io/component-base v0.0.0-20261103211149-06422decc836
 	k8s.io/component-helpers v0.0.0-20261102170948-371ec840b3af
 	k8s.io/klog/v2 v2.140.0
 	k8s.io/ktesting v0.0.0-20261102163952-bc538521d450
-	k8s.io/kubelet v0.0.0-20261102175501-36b4fb467381
+	k8s.io/kubelet v0.0.0-20261103220624-9a5fd00a4735
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/randfill v1.0.0
 	tags.cncf.io/container-device-interface/specs-go v1.1.1
@@ -46,10 +46,11 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
+	github.com/pandatix/go-abnf v0.5.5 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/prometheus/client_golang v1.25.0 // indirect
 	github.com/prometheus/client_model v0.6.3 // indirect
-	github.com/prometheus/common v0.72.0 // indirect
+	github.com/prometheus/common v0.73.1 // indirect
 	github.com/prometheus/procfs v0.22.0 // indirect
 	github.com/spf13/cobra v1.10.2 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
