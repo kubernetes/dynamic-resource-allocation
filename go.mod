@@ -15,15 +15,15 @@ require (
 	github.com/stretchr/testify v1.12.1
 	go.etcd.io/etcd/client/pkg/v3 v3.7.3
 	google.golang.org/grpc v1.85.0
-	k8s.io/api v0.0.0-20261110004848-54115355ef80
-	k8s.io/apimachinery v0.0.0-20261111054554-99ecaa0b26e4
-	k8s.io/apiserver v0.0.0-20261112012603-d0fd2463bbb6
-	k8s.io/client-go v0.0.0-20261109205458-5297d7d6d360
+	k8s.io/api v0.0.0-20261113004937-f4db9c1f58d4
+	k8s.io/apimachinery v0.0.0-20261113044458-398326f9ce6a
+	k8s.io/apiserver v0.0.0-20261113091305-e818b9f9c403
+	k8s.io/client-go v0.0.0-20261113045509-dd7e57c7aa98
 	k8s.io/component-base v0.0.0-20261103211149-06422decc836
 	k8s.io/component-helpers v0.0.0-20261110210711-c1bd5f5b0668
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/ktesting v0.0.0-20261102163952-bc538521d450
-	k8s.io/kubelet v0.0.0-20261103220624-9a5fd00a4735
+	k8s.io/ktesting v0.0.0-20261113004029-269fd0a2d021
+	k8s.io/kubelet v0.0.0-20261113015519-0bf76e881de5
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/randfill v1.0.0
 	tags.cncf.io/container-device-interface/specs-go v1.1.1
